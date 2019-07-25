@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class = "rfloat">
+         <ion-button size="small" fill="outline" color="dark" (click)="register()">Register</ion-button>
+      </div>
+    <ion-avatar>
+       <img src="https://static1.squarespace.com/static/5b23eca7297114e7aa8b6dcf/t/5b242c80758d4619173a65c5/1529097353761/Airbnb+Icon.png?format=300w">
+    </ion-avatar>
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="background">
+    <ion-card *ngFor="let listing of listings">
+      <img src="{{listing.imgUrl}}" />
+      <ion-card class="card">
+          <div class="white">
+        <ion-grid>
+          <ion-row>
+            <ion-col push-md align-self: center>
+              <ion-card-subtitle>{{listing.location}}</ion-card-subtitle>
+              <ion-card-title>{{listing.name}}</ion-card-title>
+            </ion-col>
+            <ion-col align-self: center>
+              <ion-card-title>R{{listing.price}}/night</ion-card-title>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+  </div>
+</ion-content>

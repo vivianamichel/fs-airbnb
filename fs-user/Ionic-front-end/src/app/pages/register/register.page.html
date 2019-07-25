@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>
+          <div class = "rfloat">
+             <ion-button size="small" fill="outline" color="dark" (click)="backToLogin()">Back</ion-button>
+          </div>
+        <ion-avatar>
+           <img src="https://static1.squarespace.com/static/5b23eca7297114e7aa8b6dcf/t/5b242c80758d4619173a65c5/1529097353761/Airbnb+Icon.png?format=300w">
+        </ion-avatar>
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="background">\
+      <ion-card class="card">
+          <div class="white">
+          <ion-card-header>
+            <ion-card-title>Create an Account</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+                <ion-input placeholder="First Name" [(ngModel)]="user.name"> </ion-input>
+             </ion-item>
+            <ion-item>
+                <ion-input placeholder="Last Name" [(ngModel)]="user.surname"> </ion-input>
+             </ion-item>
+             <ion-item>
+                <ion-input placeholder="Email" [(ngModel)]="user.email"> </ion-input>
+             </ion-item>
+             <ion-item>
+                <ion-input placeholder="Password" type="password" [(ngModel)] = "user.password"> </ion-input>
+             </ion-item>
+             <ion-button expand="block" fill="outline" color="dark" (click)="registerUser()">Create</ion-button>
+             <ion-button expand="block" fill="outline" color="dark" (click)="backToLogin()">I already have an account</ion-button> 
+          </ion-card-content>
+        </div>
+        </ion-card>
+      </div>
+    </ion-content>

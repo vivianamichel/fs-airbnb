@@ -1,0 +1,28 @@
+.background{
+  background-image: url("http://www.usualhouse.com/wp-content/uploads/2013/11/17347.jpg");
+  height: 100%;
+}
+.title{
+  float: inline-start;
+}
+.rfloat{
+  text-align: right;
+  float: right;
+  padding: 15px;
+}
+
+.white{
+  background-color: whitesmoke;
+  padding: 50px; 
+  height: 60%;
+  width: 80%;
+}
+
+.card {
+
+  transform: translateX(-45%) translateY(-50%);
+     top: 50%;
+     left: 50%;
+     position: fixed;
+     width: 80%;
+      }

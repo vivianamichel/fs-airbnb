@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      User
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card class="background-card">
+      <ion-list *ngFor="let user of users" (click)="navToUserUpdate(user)" >
+        <ion-item>
+            ????
+            {{user.name}}
+            {{user.surname}}
+            {{user.email}}
+        </ion-item>
+      </ion-list>
+  </ion-card>
+</ion-content>
